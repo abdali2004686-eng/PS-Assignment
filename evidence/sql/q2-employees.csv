@@ -1,0 +1,5 @@
+"EMPLOYEE_NAME","SALARY","DEPARTMENT_NAME","MANAGER_NAME","GENDER_NAME","UNIVERSITY_NAME"
+"John SCOTT",4000,"IT"," ","Male","University of Jordan"
+"Ahmad Ali",1900,"IT","John SCOTT","Male","University of Jordan"
+"Rami Hassan",1600,"Sales","John SCOTT","Male","Yarmouk University"
+"Laila Khalil",1800,"IT","John SCOTT","Female","Yarmouk University"
