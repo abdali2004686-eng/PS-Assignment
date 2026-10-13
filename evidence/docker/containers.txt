@@ -1,0 +1,8 @@
+docker ps --filter name=assignment-
+CONTAINER ID   IMAGE                  COMMAND                  CREATED        STATUS        PORTS                      NAMES
+8cfcb256b588   ps-tomcat-webapp:1.0   "catalina.sh run"        11 hours ago   Up 11 hours   127.0.0.1:7070->8080/tcp   assignment-tomcat
+ff74591b454e   postgres:17            "docker-entrypoint.s…"   11 hours ago   Up 11 hours   127.0.0.1:5432->5432/tcp   assignment-postgres
+c0dd514456a2   nginx:alpine           "/docker-entrypoint.…"   11 hours ago   Up 11 hours   127.0.0.1:8081->80/tcp     assignment-nginx
+
+docker exec assignment-postgres pg_isready -U postgres
+/var/run/postgresql:5432 - accepting connections
