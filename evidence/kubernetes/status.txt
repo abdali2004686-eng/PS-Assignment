@@ -1,0 +1,13 @@
+kubectl get nodes,deployments,pods,services
+NAME                  STATUS   ROLES           AGE   VERSION
+node/docker-desktop   Ready    control-plane   11h   v1.36.1
+
+NAME                          READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/tomcat-demo   1/1     1            1           11h
+
+NAME                              READY   STATUS    RESTARTS   AGE
+pod/tomcat-demo-b9dff9f99-rqk9k   1/1     Running   0          11h
+
+NAME                  TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+service/kubernetes    ClusterIP   10.96.0.1       <none>        443/TCP          11h
+service/tomcat-demo   NodePort    10.98.219.100   <none>        8080:32684/TCP   11h
