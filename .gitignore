@@ -1,0 +1,7 @@
+# Vagrant runtime state and downloaded VM artifacts
+.vagrant/
+*.box
+*.iso
+
+# The supplied Tomcat answers document is retained as Document (1).docx.
+/Tomcat-answers.docx
